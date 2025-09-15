@@ -1,17 +1,18 @@
-import { useNavigate } from "react-router-dom";
-import Password from "../components/Password";
+import Numbers from "../components/Numbers";
 
 export default function Goliath() {
-  const navigate = useNavigate();
-
   function handleClick() {
     console.log("clicked");
   }
 
   return (
-    <div className="bg-black w-screen flex items-center h-screen">
-      <div>
-        <Password />
+    <div className="bg-black w-screen flex items-center justify-center h-screen">
+      <div className="flex">
+        <Numbers
+          pass="0504"
+          padClass="flex justify-center text-3xl p-4 h-16 font-bold text-white"
+          message={["", "Goliath success"]}
+        ></Numbers>
       </div>
     </div>
   );

@@ -1,15 +1,20 @@
 import { useNavigate } from "react-router-dom";
 
-export default function Password() {
+export default function Password({ pass, inputClass, btnClass }) {
   const navigate = useNavigate();
 
-  function handleRedirect() {
-    navigate("/sobre"); // manda para /sobre
+  function checkInput() {
+    console.log(pass);
   }
 
   return (
-    <div className="bg-black w-screen flex items-center justify-center h-screen">
-      <input type="text" className="bg-white" />
+    <div>
+      <input
+        type="text"
+        className={inputClass}
+        placeholder="Enter password..."
+      />
+      <button onClick={checkInput()}>OK</button>
     </div>
   );
 }
