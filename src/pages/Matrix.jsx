@@ -1,5 +1,5 @@
-import Password from "../components/Password";
 import MatrixRain from "../components/MatrixRain";
+import Numbers from "../components/Numbers";
 
 export default function Matrix() {
   function handleClick() {
@@ -10,12 +10,11 @@ export default function Matrix() {
     <div className="bg-black w-screen flex items-center justify-center h-screen">
       <MatrixRain />
       <div className="absolute inset-0 flex items-center justify-center p-4">
-        <Password
-          id="goliath"
-          pass="Goliath"
-          btnClass=""
-          inputClass="p-2 bg-white text-black rounded mr-2"
-        />
+        <Numbers
+          pass="0504"
+          padClass="flex justify-center text-3xl p-4 h-16 font-bold text-white"
+          message={["", "Goliath success"]}
+        ></Numbers>
       </div>
     </div>
   );
