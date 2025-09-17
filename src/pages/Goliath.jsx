@@ -1,7 +1,7 @@
 import Password from "../components/Password";
 import React, { useState, useRef, useEffect } from "react";
 import WinAudio from "../assets/audio/win.mp3";
-import Golias from "../assets/svg/image.svg";
+import Golias from "../assets/svg/Golias.svg";
 import GoliasDefeat from "../assets/svg/GoliasDefeat.svg";
 
 export default function Goliath() {
