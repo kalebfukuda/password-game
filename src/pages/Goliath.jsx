@@ -24,7 +24,12 @@ export default function Goliath() {
               "linear-gradient(0deg,rgba(226, 140, 19, 1) 0%, rgba(255, 247, 160, 1) 100%)",
           }}
         >
-          <object data={Golias} type=""></object>
+          <object
+            data={Golias}
+            type=""
+            style="background: transparent;"
+          ></object>
+
           <Password
             id="goliath"
             pass="Goliath"
@@ -42,7 +47,11 @@ export default function Goliath() {
               "linear-gradient(0deg,rgba(226, 140, 19, 1) 0%, rgba(255, 247, 160, 1) 100%)",
           }}
         >
-          <object data={GoliasDefeat} type=""></object>
+          <object
+            data={GoliasDefeat}
+            type=""
+            style="background: transparent;"
+          ></object>
         </div>
       )}
       <audio ref={winRef}>
