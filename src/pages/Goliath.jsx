@@ -14,7 +14,9 @@ export default function Goliath() {
     handlePlay(winRef);
     console.log("Password was correct!");
   };
-  return (  
+  return ( 
+    <div>
+      <h1>HELLO</h1>
       {!isSuccess && (
         
         <div
