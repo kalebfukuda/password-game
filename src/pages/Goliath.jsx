@@ -16,7 +16,7 @@ export default function Goliath() {
   };
   return (  
       {!isSuccess && (
-        <h1>HELLO!!!</h1>
+        
         <div
           className="w-screen flex flex-col items-center justify-center h-screen"
           style={{
@@ -24,6 +24,7 @@ export default function Goliath() {
               "linear-gradient(0deg,rgba(226, 140, 19, 1) 0%, rgba(255, 247, 160, 1) 100%)",
           }}
         >
+          <h1>HELLO!!!</h1>
           <object data={Golias} type=""></object>
           <Password
             id="goliath"
