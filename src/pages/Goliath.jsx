@@ -14,14 +14,9 @@ export default function Goliath() {
     handlePlay(winRef);
     console.log("Password was correct!");
   };
-  return (
-    <div>
-      <style>
-        {`#e0b301bc6328471ba0f76439a031c16b {
-        background-color: red;
-      }`}
-      </style>
+  return (  
       {!isSuccess && (
+        <h1>HELLO!!!</h1>
         <div
           className="w-screen flex flex-col items-center justify-center h-screen"
           style={{
