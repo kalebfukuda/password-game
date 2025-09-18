@@ -16,6 +16,11 @@ export default function Goliath() {
   };
   return (
     <div>
+      <style>
+        {`#e0b301bc6328471ba0f76439a031c16b {
+        background-color: red;
+      }`}
+      </style>
       {!isSuccess && (
         <div
           className="w-screen flex flex-col items-center justify-center h-screen"
