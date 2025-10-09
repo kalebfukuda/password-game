@@ -1,6 +1,7 @@
 import Password from "../components/Password";
 import React, { useState, useRef, useEffect } from "react";
 import WinAudio from "../assets/audio/win.mp3";
+import Drum from "../assets/audio/drum.wav";
 import Golias from "../assets/svg/Golias.svg";
 import GoliasDefeat from "../assets/svg/GoliasDefeat.svg";
 
@@ -14,7 +15,7 @@ export default function Goliath() {
     handlePlay(winRef);
     console.log("Password was correct!");
   };
-  return ( 
+  return (
     <div>
       {!isSuccess && (
         <div
@@ -27,7 +28,7 @@ export default function Goliath() {
           <object data={Golias} type=""></object>
           <Password
             id="goliath"
-            pass="Goliath"
+            pass="1samuel17:45"
             btnClass=""
             inputClass="p-2 bg-white text-black rounded mr-2"
             onSuccess={handleSuccess}
@@ -46,7 +47,7 @@ export default function Goliath() {
         </div>
       )}
       <audio ref={winRef}>
-        <source src={WinAudio} type="audio/mpeg" />
+        <source src={Drum} type="audio/wav" />
       </audio>
     </div>
   );

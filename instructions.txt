@@ -1,0 +1,2 @@
+to pull to netlify:
+npm run build
